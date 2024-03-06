@@ -39,7 +39,11 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
         value: quizResults[emotion],
       }));
 
-      const diameter = 600;
+      const containerWidth = window.innerWidth;
+      const containerHeight = window.innerHeight
+
+      const diameter = Math.min(containerWidth, containerHeight);
+
       const color = d3.scaleOrdinal(d3.schemeCategory10);
 
       const bubble = d3.pack()
@@ -113,6 +117,11 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
             .style("filter", null);
         });
 
+      const screenWidth = window.innerWidth;
+      const scale = d3.scaleLinear()
+        .domain([0, 2000]) // adjust domain as needed based on your requirement
+        .range([10, 40]); // adjust range for bubble radius
+
       node.append("circle")
         .attr("r", d => d.r)
         .style("fill", d => color(d.data))
@@ -129,7 +138,11 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
         };
       }
     }, [quizResults]); // Include history in the dependency array
-  return <div ref={ref}></div>;
+  return (
+    <div className="bubble-chart-container" style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+    <div ref={ref} style={{ margin: "auto" }}></div>
+  </div>
+  );
 };
 
 export default function Quiz() {

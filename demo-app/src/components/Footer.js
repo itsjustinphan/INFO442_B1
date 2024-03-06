@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="row">
         <div className="col-md-6">
           <div className="footer-slogan">
-            <img src="img/Emote.ico" alt="inside out characters"></img>
+            <img src="img/inside-out-emotions.png" alt="inside out characters"></img>
             <div>
               <h2>Emote.</h2>
               <p>What's your emotion?</p>

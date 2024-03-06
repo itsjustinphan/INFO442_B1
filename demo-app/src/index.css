@@ -72,6 +72,11 @@ a {
   color: black;
 }
 
+.row {
+  display: flex; 
+  flex-direction: row;
+}
+
 /* Home page landing section */
 .landing-headings {
   text-align: center;
@@ -93,70 +98,6 @@ a {
   width: 400px;
   height: 400px;
 }
-
-
-/* Home page card section
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: space-evenly;
-}
-
-.card-container > a, .card-link {
-  color: black;
-}
-
-.cards {
-  border: 1px solid #f2f2f2;
-  border-radius: 3px;
-  width: 100%;
-  max-width: 400px;
-  margin: 30px;
-  border-radius: 1.5rem;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
-  font-family: 'Plus Jakarta Sans';
-}
-
-.card-header{
-  display: flex;
-  margin: 10px auto 10px 10px;
-  align-content: center;
-}
-
-.card-header > img{
-  border-radius: 50%;
-  width: 10%;
-}
-
-.card-header p{
-  margin-left:20px;
-  margin-bottom: 0;
-  font-weight: bold;
-  color: white;
-  font-size: 20px;
-  align-self: center;
-}
-
-.card-content h3 {
-  font-size: 22px;
-  margin-left: 1rem;
-  margin-bottom: 16px;
-  color: white;
-}
-
-.card-content p {
-  font-size: 20px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: white;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-*/
 
 /* Begin Resource Card styling */
 
@@ -232,7 +173,6 @@ a:link {
   margin: 0;
   padding: 30px 0;
 }
-/* Footer section */
 
 /* Footer section */
 
@@ -312,8 +252,18 @@ collapse navbar-collapse {
   background-color: transparent !important;
   border: none;
 }
+
+
 /* Extra small devices */
 @media (max-width: 600px){
+  .first {
+    order: 2;
+  }
+
+  .second {
+    order: 1;
+  }
+
   header {
     background-color: white;
     background-image: none;
@@ -337,7 +287,9 @@ collapse navbar-collapse {
   }
 
   footer {
-    display: block;
+    display: flex;
+    position: relative;
+    bottom: 0;
   }
 
   .footer-slogan {
@@ -348,10 +300,12 @@ collapse navbar-collapse {
   .footer-contact {
     text-align: center;
   }
+
 }
 
 /* Small devices */
 @media (min-width: 600px){
+  
   header {
     background-color: white;
     background-image: none;
@@ -370,13 +324,6 @@ collapse navbar-collapse {
   }
 }
 
-/* Medium devices */
-/* @media (min-width: 768px) {
-  header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../public/img/landing.jpeg');
-  }
-} */
-
 /* Large devices */
 @media (min-width: 992px) {
   .about-us img {
@@ -387,7 +334,6 @@ collapse navbar-collapse {
     text-align: left;
   }
 }
-
 
 
 /*Quiz Section CSS*/
@@ -426,9 +372,6 @@ fill: #B981DD !important;
 }
 
 .contant-div {
-/* background-image: url(./img/sadness.png);
-background-size: contain;
-background-position: right; */
 max-width: 80%;
 margin: 0 auto;
 background-repeat: no-repeat;
@@ -567,6 +510,13 @@ nav.color-nav.navbar.navbar-expand.navbar-light {
   align-items: center;
   height: 100%;
 }
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Begin Resource Card styling */
 
 .resource-container {
