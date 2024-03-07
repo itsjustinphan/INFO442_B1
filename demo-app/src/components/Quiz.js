@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import questionsData from "../data/questions.json";
 import * as d3 from 'd3';
 import{ useNavigate }from 'react-router-dom';
-
+// Object defining answer values for each emotion
 const answerValues = {
   "Sad": [4, 3, 2, 1],
   "Happy": [4, 3, 2, 1],
@@ -11,12 +11,12 @@ const answerValues = {
   "Fear": [4, 3, 2, 1],
   "Stress": [4, 3, 2, 1]
 };
-
+// Component for handling button click to navigate to home page
 function BubbleStuff() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/Happy');
+    navigate('/Happy'); // Navigate to the 'Happy' page
   };
 
   return (
@@ -134,7 +134,7 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
         .style("fill", "white");
 
         return () => {
-          svg.remove();
+          svg.remove();  // Cleanup function to remove SVG element
         };
       }
     }, [quizResults]); // Include history in the dependency array
@@ -144,13 +144,13 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
   </div>
   );
 };
-
+// Main quiz component
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [responses, setResponses] = useState(new Array(questionsData.length).fill(null));
   const [quizResults, setQuizResults] = useState(null);
   const questions = questionsData;
-
+ // Update responses array based on selected option
   const handleResponseChange = (responseIndex) => {
     setResponses(prevResponses => {
       const updatedResponses = [...prevResponses];
@@ -159,9 +159,10 @@ export default function Quiz() {
     });
   };
 
-  
+    // Handle bubble click event
   const handleBubbleClick = (emotion) => {
-  };
+  };     // Do something when bubble is clicked
+  // Move to next question or display quiz results
   const handleNext = () => {
     const currentResponse = responses[currentQuestion];
     const nextQuestion = currentQuestion + 1;
@@ -179,7 +180,7 @@ export default function Quiz() {
   };
 
 
-
+  // Calculate and display quiz results
 
   const displayQuizResults = () => {
     const results = {};

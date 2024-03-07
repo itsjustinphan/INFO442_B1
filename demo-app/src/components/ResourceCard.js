@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Functional component for displaying a resource card
 const ResourceCard = ({ resource }) => {
   return (
     <div className="resource-card-container">

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-
+// Footer component
 export default function Footer() {
   return (
     <footer>
