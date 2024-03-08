@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import questionsData from "../data/questions.json";
 import * as d3 from 'd3';
 import{ useNavigate }from 'react-router-dom';
-// Object defining answer values for each emotion
+
+// Object defining answer values for each question for each emotion
 const answerValues = {
   "Sad": [4, 3, 2, 1],
   "Happy": [4, 3, 2, 1],
