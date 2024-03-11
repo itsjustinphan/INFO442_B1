@@ -7,7 +7,7 @@ import Home from './Home';
 import Quiz from './Quiz';
 import Happy from './happy';
 import Sad from './sad';
-import Anger from './anger';
+import Anger from './anger1';
 import Fear from './fear';
 import Stress from './stress';
 import Footer from './Footer';
@@ -31,11 +31,11 @@ function App(props) {
           <Route path="/About" element={<About />} />
           <Route path="/Quiz" element={<Quiz />} />
           {/* <Route path="/Resources" element={<Resources />} /> */}
-          <Route path="/Happy" element={<Happy />} />
-          <Route path="/Sad" element={<Sad />} />
-          <Route path="/Anger" element={<Anger />} />
-          <Route path="/Stress" element={<Stress />} />
-          <Route path="/Fear" element={<Fear />} />
+          <Route path="/happy" element={<Happy />} />
+          <Route path="/sad" element={<Sad />} />
+          <Route path="/anger1" element={<Anger />} />
+          <Route path="/stress" element={<Stress />} />
+          <Route path="/fear" element={<Fear />} />
         </Routes>
         <Footer/> 
     </Router>

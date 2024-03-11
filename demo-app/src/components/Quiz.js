@@ -6,11 +6,11 @@ import{ useNavigate }from 'react-router-dom';
 
 // Object defining answer values for each question for each emotion
 const answerValues = {
-  "Sad": [4, 3, 2, 1],
-  "Happy": [4, 3, 2, 1],
-  "Anger": [4, 3, 2, 1],
-  "Fear": [4, 3, 2, 1],
-  "Stress": [4, 3, 2, 1]
+  "sad": [4, 3, 2, 1],
+  "happy": [4, 3, 2, 1],
+  "anger": [4, 3, 2, 1],
+  "fear": [4, 3, 2, 1],
+  "stress": [4, 3, 2, 1]
 };
 // Component for handling button click to navigate to home page
 function BubbleStuff() {

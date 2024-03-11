@@ -5,7 +5,7 @@ import ResourceCard from "./ResourceCard";
 import resourcesData from "../data/resources.json";
 
 //Renders the landing page for the users
-export default function sad() {
+export default function Sad() {
     const [resources, setResources] = useState([]);
 
 
