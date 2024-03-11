@@ -4,14 +4,14 @@ import Button from 'react-bootstrap/Button';
 import ResourceCard from "./ResourceCard";
 import resourcesData from "../data/resources.json";
 
-//Renders the landing page for users
-export default function Happy() {
+//Renders the landing page for the users
+export default function happy() {
   const [resources, setResources] = useState([]);
 
 
   useEffect(() => {
     const happyResources = resourcesData.filter(
-      (resource) => resource.emotion === "Happy"
+      (resource) => resource.emotion === "happy"
     );
     setResources(happyResources);
   }, []);

@@ -1,7 +1,7 @@
 
 [
   {
-    "emotion": "Sad",
+    "emotion": "sad",
     "question": "Reflecting on your recent experiences, have you encountered any events or situations that have left you feeling overwhelmed with sadness?",
     "options": [
       "Absolutely, I'm feeling quite down about something.",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "emotion": "Sad",
+    "emotion": "sad",
     "question": "Have you encountered any recent situations that have left you feeling a sense of loss or emptiness?",
     "options": [
       "Absolutely, I'm feeling quite down about something",
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "emotion": "Sad",
+    "emotion": "sad",
     "question": "Is there anything taking up your headspace at the moment?",
     "options": [
       "Yes, it has taken up alot of my headspace.",
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "emotion": "Happy",
+    "emotion": "happy",
     "question": "How often do you reflect on what you’re grateful for?",
     "options": [
       "Often, I always try to practice gratitude.",
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "emotion": "Happy",
+    "emotion": "happy",
     "question": "Over the last week, how frequently have you found yourself smiling or laughing genuinely?",
     "options": [
       "Everyday.",
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "emotion": "Happy",
+    "emotion": "happy",
     "question": "Do you often take time to appreciate the little things that make you happy each day?",
     "options": [
       "Yes, everyday.",
@@ -61,7 +61,7 @@
     ]
   },
   {
-    "emotion": "Anger",
+    "emotion": "anger",
     "question": "Have you recently experienced a situation that has upset you or made you angry?",
     "options": [
       "Definitely, I’m quite upset about something.",
@@ -71,7 +71,7 @@
     ]
   },
   {
-    "emotion": "Anger",
+    "emotion": "anger",
     "question": "Over the past week, how often have you found yourself feeling irritated or angered?",
     "options": [
       "Almost constantly, It’s been a tough week emotionally",
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "emotion": "Anger",
+    "emotion": "anger",
     "question": "How would you describe the overall tone of your recent interactions with others?",
     "options": [
       "Positive and harmonious.",
@@ -91,7 +91,7 @@
     ]
   },
   {
-    "emotion": "Fear",
+    "emotion": "fear",
     "question": "When you think about next week, how do you feel?",
     "options": [
       "Resentful as it might not turn out well.",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "emotion": "Fear",
+    "emotion": "fear",
     "question": "How often do you worry about your future?",
     "options": [
       "Yes, everyday this week.",
@@ -111,7 +111,7 @@
     ]
   },
   {
-    "emotion": "Fear",
+    "emotion": "fear",
     "question": "Do you feel safe in your environment?",
     "options": [
       "Never, I do not feel safe and am constantly worried about my safety.",
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "emotion": "Stress",
+    "emotion": "stress",
     "question": "Were you not able to fall and stay asleep this past week?",
     "options": [
       "Yes, everyday this week.",
@@ -131,7 +131,7 @@
     ]
   },
   {
-    "emotion": "Stress",
+    "emotion": "stress",
     "question": "Did you feel overwhelmed this week? If so, how many times?",
     "options": [
       "Yes, everyday this week.",
@@ -141,7 +141,7 @@
     ]
   },
   {
-    "emotion": "Stress",
+    "emotion": "stress",
     "question": "Have you been in control of your behavior/thoughts/emotions this week?",
     "options": [
       "Not really",
