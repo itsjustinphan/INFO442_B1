@@ -33,7 +33,7 @@ export default function NavBar() {
               </Dropdown.Toggle>
               <Dropdown.Menu className="dropdown">
                 <Dropdown.Item className="anger">
-                  <NavLink aria-label="anger" to="/anger1" className="nav-link" id="nav-li" activeClassName={"activeLink"}>
+                  <NavLink aria-label="anger" to="/anger" className="nav-link" id="nav-li" activeClassName={"activeLink"}>
                     <img className="dropdown-image" src={anger} alt="anger" />
                     <p className="dropdown-text">Anger</p>
                   </NavLink>
