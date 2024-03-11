@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import About from './About';
-import NavBar from './NavBar';
+import NavBar from './NavBarcopy';
 import Home from './Home';
 // import Resources from './Resources';
 import Quiz from './Quizcopy1';
@@ -25,7 +25,7 @@ function App(props) {
     <div>
       <Router>
         <NavBar />
-    {/* establishes routing between pages */}
+    {/* establishes routing between the pages */}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/About" element={<About />} />
