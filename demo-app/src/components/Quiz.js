@@ -17,7 +17,7 @@ function BubbleStuff() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/Happy'); // Navigate to the 'Happy' page
+    navigate('/happy'); // Navigate to the 'Happy' page
   };
 
   return (
