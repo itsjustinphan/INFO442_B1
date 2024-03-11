@@ -91,9 +91,9 @@ const BubbleChart = ({ quizResults, onBubbleClick }) => {
           console.log(d)
           if (d) {
             // Call the onBubbleClick function with the emotion name
+            //nav("/" + d.target.__data__.data.name);
             const url = `/${d.target.__data__.data.name}`;
-            console.log(url);
-            window.open(url, '_blank');
+            window.open(url);
             // Use useHistory hook to navigate to the corresponding resource page
             //history.push(`/${d.data.name.toLowerCase()}`); // Assuming your route paths are based on emotion names
           } else {
