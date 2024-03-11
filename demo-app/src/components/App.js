@@ -5,11 +5,11 @@ import NavBar from './NavBar';
 import Home from './Home';
 // import Resources from './Resources';
 import Quiz from './Quiz';
-import Happy from './happy';
-import Sad from './sad';
+import Happy from './Happy';
+import Sad from './Sad';
 import Anger from './anger';
-import Fear from './fear';
-import Stress from './stress';
+import Fear from './Fear';
+import Stress from './Stress';
 import Footer from './Footer';
 
 export function handleScroll() {
