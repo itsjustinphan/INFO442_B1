@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import About from './About';
-import NavBar from './NavBarcopy';
+import NavBar from './NavBar';
 import Home from './Home';
 // import Resources from './Resources';
-import Quiz from './Quizcopy1';
+import Quiz from './Quiz';
 import Happy from './happy';
 import Sad from './sad';
 import Anger from './anger';
@@ -29,7 +29,7 @@ function App(props) {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/About" element={<About />} />
-          <Route path="/Quizcopy1" element={<Quiz />} />
+          <Route path="/Quiz" element={<Quiz />} />
           {/* <Route path="/Resources" element={<Resources />} /> */}
           <Route path="/happy" element={<Happy />} />
           <Route path="/sad" element={<Sad />} />

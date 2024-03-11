@@ -26,7 +26,7 @@ export default function NavBar() {
           </Nav>
           <Navbar.Brand className="mx-auto">Emote.</Navbar.Brand>
           <Nav>
-            <Nav.Link as={Link} to="/Quizcopy1">Quiz</Nav.Link>
+            <Nav.Link as={Link} to="/Quiz">Quiz</Nav.Link>
             <Dropdown>
               <Dropdown.Toggle aria-label="Emotions" className="dropdown" id="dropdown-button">
                 <div className="dropdown-name">Resources</div>
